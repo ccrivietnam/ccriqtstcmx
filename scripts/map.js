@@ -940,7 +940,7 @@ $(window).on('load', function() {
     }
 
     credit += '<a href="' + getSetting('_githubRepo') + '">Code</a>';
-    if (getSetting('_codeCredit')) credit += ' by ' + getSetting('_codeCredit');
+    if (getSetting('_codeCredit')) credit += '';
     credit += ' with ';
     $('.leaflet-control-attribution')[0].innerHTML = credit + attributionHTML;
   }
