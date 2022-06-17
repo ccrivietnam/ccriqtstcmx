@@ -934,12 +934,12 @@ $(window).on('load', function() {
       if (url.indexOf('@') > 0) { url = 'mailto:' + url; }
       credit += ' By <a href="' + url + '">' + name + '</a> | ';
     } else if (name) {
-      credit += ' by ' + name + ' | ';
+      credit += ' by ' + name + '  ';
     } else {
-      credit += ' | ';
+      credit += '  ';
     }
 
-    credit += 'View <a href="' + getSetting('_githubRepo') + '">code</a>';
+    credit += '<a href="' + getSetting('_githubRepo') + '">Code</a>';
     if (getSetting('_codeCredit')) credit += ' by ' + getSetting('_codeCredit');
     credit += ' with ';
     $('.leaflet-control-attribution')[0].innerHTML = credit + attributionHTML;
